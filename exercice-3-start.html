@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 1rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header, footer{
+            background-color:  #1e90ff;
+            color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        footer {
+            background-color: #4169e1;
+        }
+
+        .content{
+            display: flex;
+            gap: 1rem;
+            flex-grow: 1;
+        }
+
+        main{
+            display: flex;
+            background-color: #3cb371;
+            border-radius: 0.5rem;
+            color: white;
+            flex-direction: column; 
+            flex-grow: 1;
+            padding: 1em;
+            gap: 1em;
+        }
+
+        .item-box{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
+
+        .item{
+            background-color: #2f8d59;
+            color: white;
+            padding: 1rem;
+            width: 15vw;
+            height: 20vh;
+            border-radius: 0.5rem;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .sidebar {
+            background-color: #ff6347;
+            color: white;
+            padding: 1em;
+            border-radius: 0.5rem;
+            width: 50vw;          
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="content">
+            <main>
+                Main
+                <div class="item-box">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>                  
+                </div>
+            </main>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
